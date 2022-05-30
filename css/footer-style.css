@@ -1,0 +1,129 @@
+#footer {
+  padding: 5%;
+}
+
+#about {
+  font-size: 12px;
+  margin-bottom: 10%;
+}
+
+.add__person {
+  display: none;
+}
+
+#peron-input {
+  height: 25px;
+  outline-color: #0D80FB;
+}
+
+#add {
+  padding: 1.5%;
+  width: 15%;
+}
+
+.add-details,
+.add-btn {
+  background: white;
+  color: black;
+  border: 1px solid #e6e7e8;
+  border-radius: 3px;
+  padding: 2.5%;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.add-details:hover {
+  color: white;
+  background-color: #0D80FB;
+  transition: all 500ms ease-in-out;
+  transform: scale(1.1);
+  padding: 2.5%;
+}
+
+#members {
+  font-size: 12px;
+  max-height: 220px;
+  overflow-y: scroll;
+}
+
+.member {
+  font-size: 12px;
+  justify-content: space-between;
+  margin-top: 3%;
+  padding-right: 5%;
+}
+
+.member__details {
+  align-items: center;
+  gap: 10px;
+}
+
+.member__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.logo__message {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-message-square'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.logo__message:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2319b5f7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-message-square'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+#media {
+  font-size: 12px;
+  margin: 10% 0;
+}
+
+.media__images {
+  margin-top: 2%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.media__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-size: cover;
+}
+
+.other__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #e6e7e8;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#labels {
+  font-size: 12px;
+}
+
+.label__headers {
+  justify-content: space-between;
+}
+
+.label__details {
+  margin-top: 5%;
+  font-size: 14px;
+}
+
+.label {
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.label__img {
+  width: 25px;
+  height: 25px;
+}
+
+.logo__wip {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg viewBox='0 0 96 96' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle/%3E%3Cpath d='M78-.0011H18a5.9965,5.9965,0,0,0-6,6v84a6.0015,6.0015,0,0,0,9.75,4.6875L48,73.6805,74.25,94.6864A6.0015,6.0015,0,0,0,84,89.9989v-84A5.9965,5.9965,0,0,0,78-.0011ZM72,77.5125,51.75,61.3114a6.0134,6.0134,0,0,0-7.5,0L24,77.5125V11.9989H72Z'/%3E%3C/svg%3E");
+}

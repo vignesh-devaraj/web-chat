@@ -1,0 +1,44 @@
+.row__display {
+  display: flex;
+  flex-direction: row;
+}
+
+.row__display-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.row__align {
+  justify-content: center;
+  align-items: center;
+}
+
+.column__display {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__display {
+  display: grid;
+}
+
+.name {
+  font-weight: 600;
+}
+
+#time {
+  color: #7d8ca1;
+}
+
+.textColor {
+  color: #7d8ca1;
+}
+
+#logo,
+.logo {
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  cursor: pointer;
+}

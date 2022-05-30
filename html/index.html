@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/common-style.css">
+  <link rel="stylesheet" type="text/css" href="../css/profile-style.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer-style.css">
+  <link rel="stylesheet" type="text/css" href="../css/chat-data-style.css">
+  <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
+  <script type="module" src="../js/index.js"></script>
+  <title>Web Chat</title>
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <section class="header__logos">
+        <img src="../assets/icons/figma.svg" class="header__logo figma__logo" alt="">
+        <img src="../assets/icons/mailchimp.svg" class="header__logo" alt="">
+        <div class="header__logo plus__logo" style="cursor: pointer;"> + </div>
+      </section>
+      <section class="header__icons">
+        <span class="logo icon-settings"></span>
+        <span class="logo icon-user"></span>
+      </section>
+    </header>
+    <section id="profile">
+      <section class="column__display profile__details">
+        <div class="details__img row__display">
+          <div id="profile-photo" class="img"></div>
+          <div class="status profile__status"></div>
+        </div>
+        <div id="profile-name" class="name details__name">
+          
+        </div>
+        <div class="details__icons">
+          <div class="icon__fb"></div>
+          <div class="icon__insta"></div>
+          <div class="icon__github"></div>
+        </div>
+      </section>
+      <section class="profile__users">
+        <span id="name" class="name">Active Users</span>
+        <div id="active-users" class="users__active row__display">
+          
+        </div>
+      </section>
+      <section id="profile__chats">
+        <span id="name" class="name">Chats</span>
+        <div class="chats__form">
+          <form>
+            <input id="search__text" type="text" placeholder="Search">
+          </form>
+        </div>
+        <div id="display-chats" class="column__display chats">
+          
+        </div>
+      </section>
+    </section>
+    <section id="chat-data">
+      <section class="row__display chat__name">
+        <div id="chat-header" class="row__display name__img">
+
+        </div>
+        <div id="chat-header-logos" class="row__display name__logo name__img">
+          <div id="logo" class="logo__phone"></div>
+          <div id="logo" class="logo__video"></div>
+          <div class="logo__chat">|</div>
+          <div id="logo-chat" class="logo logo__search"></div>
+          <div id="logo" class="logo__more"></div>
+        </div>
+        <div id="search-chat-form" class="row__display">
+          <form class="row__display" style="align-items:center;">
+            <input type="text" id="search-chat" placeholder="Type and click enter..">
+            <div id="search-button" class="logo logo__search" style="padding-right:5px;"></div>
+            <div id="up-button" class="logo logo__up"></div>
+            <div id="down-button" class="logo logo__down"></div>
+            <div id="close-search" class="logo logo__close"></div>
+          </form>
+        </div>
+      </section>
+      <section id="chat-history" class="chat__history">
+        
+      </section>
+      <section class="add__chat">
+        <form class="row__display">
+          <input id="chat__comment" class="chat__icons" type="text" placeholder="Add a comment...">
+          <section class="row__display comment__logos">
+            <span class="logo" id="gallery-logo"></span>
+            <span class="logo" id="smiley-logo"></span>
+            <span class="logo" id="tag-logo"></span>
+            <span class="logo" id="map-logo"></span>
+          </section>
+        </form>
+      </section>
+    </section>
+    <footer id="footer">
+      <section id="about">
+        <span id="name" class="name">About</span>
+        <p id="time">Add details about people, like contact information</p>
+        <form id="add-details-form" class="add__person">
+          <input type="text" name="person-name" id="peron-input" placeholder="Enter Name">
+          <input type="submit" id="add" class="add-btn add-details" value="Add">
+        </form>
+        <button id="add-details-btn" class="name add-details">Add details</button>
+      </section>
+      <section id="members">
+        <span id="name" class="name">Memebers</span> <span id="member-count" class="textColor">4</span>
+        <div id="member-display" class="column__display">
+         
+        </div>
+      </section>
+      <section id="media">
+         <span id="name" class="name">Media</span> <span id="time">39 Images</span>
+         <div class="row__display media__images">
+           <img class="media__img" src="../assets/images/nature1.jpg" alt="Nature">
+           <img class="media__img" src="../assets/images/nature1.jpg" alt="Nature">
+           <img class="media__img" src="../assets/images/nature1.jpg" alt="Nature">
+           <div class="media__img other__img">
+            +136
+           </div>
+         </div>
+      </section>
+      <section id="labels">
+        <div class="row__display label__headers">
+          <span id="name" class="name">Labels</span> 
+          <span id="time">Manage Labels</span>
+        </div>
+        <div class="label__details">
+          <div class="label row__display">
+            <img class="label__img" src="../assets/icons/wip-label.svg" alt="Label">
+            <span>Work in progress</span>
+          </div>
+          <div class="label row__display">
+            <img class="label__img" src="../assets/icons/imp-label.svg" alt="Label">
+            <span>Important tasks</span>
+          </div>
+          <div class="label row__display">
+            <img class="label__img" src="../assets/icons/proj-label.svg" alt="Label">
+            <span>Project documents</span>
+          </div>
+          <div class="label row__display">
+            <img class="label__img" src="../assets/icons/read-label.svg" alt="Label">
+            <span>Read later</span>
+          </div>
+          <div class="label row__display">
+            <img class="label__img" src="../assets/icons/travel-label.svg" alt="Label">
+            <span>Travel documents</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

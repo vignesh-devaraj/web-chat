@@ -1,0 +1,37 @@
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #header {
+    flex-direction: row;
+  }
+
+  .header__logos {
+    flex-direction: row;
+    column-gap: 4%;
+  }
+  
+  .header__icons {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .header__logo {
+    width: 30%;
+    height: 30px;
+  }
+
+  .message__details {
+    width: 70%;
+  }
+
+  .chat__name {
+    row-gap: 15px;
+  }
+
+  .name__img {
+    gap: 3px;
+  }
+}
