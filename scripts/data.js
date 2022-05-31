@@ -2,7 +2,7 @@ export const userData = {
   "user": {
     "name": "Heather Parker",
     "active": true,
-    "profilePhoto": "/assets/images/person1.jpg",
+    "profilePhoto": "assets/images/person1.jpg",
     "contacts": [
       {
         "name": "Robert Fox",
