@@ -3,6 +3,7 @@ import { makeFooter } from "./footer.js";
 import { makeChatData } from "./chat-data.js";
 import {userData} from "./data.js"
 
+export const baseUrl = location.href;
 // fetch("./data.json")
 //   .then((data) => data.json())
 //   .then((data) => {

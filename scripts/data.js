@@ -7,7 +7,7 @@ export const userData = {
       {
         "name": "Robert Fox",
         "active": true,
-        "profilePhoto": "../assets/images/girl11.png",
+        "profilePhoto": "assets/images/girl11.png",
         "chats": [
           {
             "chatType": {
@@ -77,7 +77,7 @@ export const userData = {
       {
         "name": "Darleno Robertson",
         "active": false,
-        "profilePhoto": "../assets/images/girl22.png",
+        "profilePhoto": "assets/images/girl22.png",
         "chats": [
           {
             "chatType": {
@@ -102,7 +102,7 @@ export const userData = {
       {
         "name": "Theresa Webb",
         "active": true,
-        "profilePhoto": "../assets/images/girl33.png",
+        "profilePhoto": "assets/images/girl33.png",
         "chats": [
           {
             "chatType": {
@@ -147,8 +147,8 @@ export const userData = {
                 },
                 "dateAndTime": "Mon May 30 2022 7:26:41 GMT+0530 (India Standard Time)",
                 "images": [
-                  "../assets/images/nature1.jpg",
-                  "../assets/images/nature1.jpg"
+                  "assets/images/nature1.jpg",
+                  "assets/images/nature1.jpg"
                 ]
               }
             ]
@@ -176,7 +176,7 @@ export const userData = {
       {
         "name": "Kristin Watson",
         "active": true,
-        "profilePhoto": "../assets/images/girl44.png",
+        "profilePhoto": "assets/images/girl44.png",
         "chats": [
           {
             "chatType": {
@@ -201,7 +201,7 @@ export const userData = {
       {
         "name": "Cody Fisher",
         "active": false,
-        "profilePhoto": "../assets/images/boy66.png",
+        "profilePhoto": "assets/images/boy66.png",
         "chats": [
           {
             "chatType": {
@@ -226,7 +226,7 @@ export const userData = {
       {
         "name": "Jane Cooper",
         "active": true,
-        "profilePhoto": "../assets/images/girl55.png",
+        "profilePhoto": "assets/images/girl55.png",
         "chats": [
           {
             "chatType": {
@@ -271,8 +271,8 @@ export const userData = {
                 },
                 "dateAndTime": "Mon May 30 2022 5:26:41 GMT+0530 (India Standard Time)",
                 "images": [
-                  "../assets/images/nature1.jpg",
-                  "../assets/images/nature1.jpg"
+                  "assets/images/nature1.jpg",
+                  "assets/images/nature1.jpg"
                 ]
               }
             ]
@@ -300,19 +300,19 @@ export const userData = {
     "members": [
       {
         "name": "Robert Fox",
-        "profilePhoto": "../assets/images/girl11.png"
+        "profilePhoto": "assets/images/girl11.png"
       },
       {
         "name": "Darleno Robertson",
-        "profilePhoto": "../assets/images/girl22.png"
+        "profilePhoto": "assets/images/girl22.png"
       },
       {
         "name": "Theresa Webb",
-        "profilePhoto": "../assets/images/girl33.png"
+        "profilePhoto": "assets/images/girl33.png"
       },
       {
         "name": "Kristin Watson",
-        "profilePhoto": "../assets/images/girl44.png"
+        "profilePhoto": "assets/images/girl44.png"
       }
     ]
   }

@@ -6,8 +6,9 @@ import {
   makeSectionWithClassAndId,
   trimSecondsFromTime,
 } from "./common-function.js";
+import { baseUrl } from "./index.js";
 
-const playSvg = "../assets/icons/play-solid.svg";
+const playSvg = "assets/icons/play-solid.svg";
 let userDetails;
 let selectedContact;
 let searchValue;
@@ -141,7 +142,7 @@ function loadSelectedChat(contactName) {
 function makeChatHeader(userContact) {
   const chatHeaderDiv = getElementById("chat-header");
   chatHeaderDiv.innerHTML = "";
-  const img = makeImgWithClassAndSrc("chat__photo", userContact.profilePhoto);
+  const img = makeImgWithClassAndSrc("chat__photo", baseUrl + userContact.profilePhoto);
   const div = makeDivWithClassAndId("name", {
     id: "name",
     data: userContact.name,
@@ -170,14 +171,14 @@ function makeChatContent(userContact) {
     if (chat.chatType.msgType === "message") {
       isMessage = true;
       chatSection?.classList.add("row__display-reverse");
-      img.src = userContact.profilePhoto;
+      img.src = baseUrl + userContact.profilePhoto;
       nameDiv.classList.add("row__display-reverse");
       nameSpan.innerText = userContact.name;
     } else {
       isMessage = false;
       let messageFromContact = findContact(chat.from);
       chatSection?.classList.add("row__display");
-      img.src = messageFromContact.profilePhoto;
+      img.src = baseUrl + messageFromContact.profilePhoto;
       nameDiv.classList.add("row__display");
       nameSpan.innerText = messageFromContact.name;
     }
@@ -229,7 +230,7 @@ function makeTextAudioImageSection(isMessage, chat, msgDiv, isChild) {
     msgSection.appendChild(logoDiv);
   } else if (chat.chatType?.type === "audio") {
     msgContentDiv.classList.add("audio__msg", "row__display");
-    const imgPlay = makeImgWithClassAndSrc("play__icon", playSvg);
+    const imgPlay = makeImgWithClassAndSrc("play__icon", baseUrl + playSvg);
     const blankDiv = makeDivWithClassAndId("blank__msg");
     const audioTimeDiv = makeDivWithClassAndId(
       "row__display audio__msg audio__gap"
@@ -249,7 +250,7 @@ function makeTextAudioImageSection(isMessage, chat, msgDiv, isChild) {
   } else if (chat.chatType?.type === "image") {
     msgSection.classList.add("message__images");
     chat.images?.forEach((image) => {
-      msgSection.appendChild(makeImgWithClassAndSrc("chat__image", image));
+      msgSection.appendChild(makeImgWithClassAndSrc("chat__image", baseUrl + image));
     });
     // msgSection.appendChild(msgContentDiv);
   }

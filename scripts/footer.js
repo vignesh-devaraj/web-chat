@@ -4,6 +4,7 @@ import {
   makeSpanWithIdAndClass,
   makeImgWithClassAndSrc,
 } from "./common-function.js";
+import { baseUrl } from "./index.js";
 
 let userDetails;
 let isOpen = false;
@@ -26,7 +27,7 @@ function displayMembers(members) {
     const memberDetailRow = makeDivWithClassAndId(
       "row__display member__details"
     );
-    const img = makeImgWithClassAndSrc("member__img", member.profilePhoto);
+    const img = makeImgWithClassAndSrc("member__img", baseUrl + member.profilePhoto);
     const span = makeSpanWithIdAndClass("name", "name", member.name);
     memberDetailRow.appendChild(img);
     memberDetailRow.appendChild(span);
@@ -65,7 +66,7 @@ function addMember(event) {
   if (name) {
     userDetails?.members?.push({
       name: name,
-      profilePhoto: "../assets/images/boy55.png",
+      profilePhoto: baseUrl + "assets/images/boy55.png",
     });
   }
   addDetailsForm["person-name"].value = "";

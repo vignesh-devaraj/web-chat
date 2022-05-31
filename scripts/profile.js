@@ -8,12 +8,13 @@ import {
 } from "./common-function.js";
 
 import { loadSelectedChat } from "./chat-data.js";
+import { baseUrl } from "./index.js";
 
 let userDetails;
 let id = 0;
 const searchText = getElementById("search__text");
 searchText.addEventListener("input", filterData);
-let baseUrl = location.href + location.pathname;
+
 
 export function makeProfile(userData) {
   userDetails = userData;
@@ -26,7 +27,7 @@ function makeProfileHeader(userData) {
   getElementById("profile-name").innerText = userData.name;
   const profilePhoto = getElementById("profile-photo");
   console.log(location.href+userData.profilePhoto)
-  profilePhoto.style.background = `url(${location.href}${userData.profilePhoto})`;
+  profilePhoto.style.background = `url(${baseUrl}${userData.profilePhoto})`;
   profilePhoto.style.backgroundSize = "cover";
 }
 
@@ -50,7 +51,7 @@ function makeImgWithStatus(imageData) {
   const div = makeDivWithClassAndId(imageData.divClass);
   const img = document.createElement("img");
   const statusDiv = document.createElement("div");
-  img.src = imageData.src;
+  img.src = baseUrl + imageData.src;
   img.setAttribute("class", imageData.imgClass);
   statusDiv.setAttribute("id", imageData.statusId);
   statusDiv.setAttribute("class", imageData.statusClass);
