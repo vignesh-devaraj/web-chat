@@ -24,6 +24,7 @@ export function makeProfile(userData) {
 function makeProfileHeader(userData) {
   getElementById("profile-name").innerText = userData.name;
   const profilePhoto = getElementById("profile-photo");
+  console.log(userData.profilePhoto)
   profilePhoto.style.background = `url(${userData.profilePhoto})`;
   profilePhoto.style.backgroundSize = "cover";
 }
