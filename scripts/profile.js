@@ -13,6 +13,7 @@ let userDetails;
 let id = 0;
 const searchText = getElementById("search__text");
 searchText.addEventListener("input", filterData);
+let baseUrl = location.href + location.pathname;
 
 export function makeProfile(userData) {
   userDetails = userData;
@@ -25,7 +26,7 @@ function makeProfileHeader(userData) {
   getElementById("profile-name").innerText = userData.name;
   const profilePhoto = getElementById("profile-photo");
   console.log(userData.profilePhoto)
-  profilePhoto.style.background = `url(${userData.profilePhoto})`;
+  profilePhoto.style.background = `url(${baseUrl}/${userData.profilePhoto})`;
   profilePhoto.style.backgroundSize = "cover";
 }
 
