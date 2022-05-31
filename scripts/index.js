@@ -4,14 +4,14 @@ import { makeChatData } from "./chat-data.js";
 import {userData} from "./data.js"
 
 export const baseUrl = location.href;
-// fetch("./data.json")
-//   .then((data) => data.json())
-//   .then((data) => {
-//     makeProfile(data?.user);
-//     makeFooter(data?.user);
-//     makeChatData(data?.user);
-//   });
+fetch(baseUrl + "assets/data.json")
+  .then((data) => data.json())
+  .then((data) => {
+    makeProfile(data?.user);
+    makeFooter(data?.user);
+    makeChatData(data?.user);
+  });
 // console.log(userData);
-makeProfile(userData?.user);
-makeFooter(userData?.user);
-makeChatData(userData?.user);
+// makeProfile(userData?.user);
+// makeFooter(userData?.user);
+// makeChatData(userData?.user);
